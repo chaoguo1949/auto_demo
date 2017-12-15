@@ -19,8 +19,8 @@ def  Auto():
 	# 点击免费版
 	li[1].Click()
 	# 输入账号密码
-	uname = EditControl(searchFromControl = login_window, AutomationId = '1443').SetValue('Mark1949')
-	upwd = EditControl(searchFromControl = login_window, AutomationId = '1058').SetValue('1qaz2wsx')
+	uname = EditControl(searchFromControl = login_window, AutomationId = '1443').SetValue('username')
+	upwd = EditControl(searchFromControl = login_window, AutomationId = '1058').SetValue('password')
 	# 点击登录
 	login = ButtonControl(searchFromControl = login_window, AutomationId = '1').Click()
 	time.sleep(2)
